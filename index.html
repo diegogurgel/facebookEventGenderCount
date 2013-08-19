@@ -115,6 +115,7 @@
     }
     table{
       margin: 0 auto;
+      display: none;
     }
 
   </style>
@@ -140,6 +141,7 @@
     if (response.status === 'connected') {
       document.getElementById("form").style.display="block";
       document.getElementById("graph").style.display="block";
+      
       //requestAttending(FB.getAccessToken(),"295534817257363")
 
       // The response object is returned with a status field that lets the app know the current
@@ -199,7 +201,7 @@
      <input type="text" name="inputBusca" id="search" placeholder="Ex. https://www.facebook.com/events/606046899426871">
      <button id="btnOk">OK</button>
   </div>
-  <table>
+  <table id="tableQtdGenders">
     <tr class="mulheres">
       <td>Mulheres</td><td id="qtdF"></td>
     </tr>

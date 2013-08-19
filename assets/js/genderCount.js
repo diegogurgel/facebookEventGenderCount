@@ -6,7 +6,9 @@
 
 			}else{
 				var idEvent = inputUrlEvent.value.split('/')[4];
+				document.getElementById("tableQtdGenders").style.display="table";
 				requestAttending(FB.getAccessToken(),idEvent);
+
 			}
 
 			
